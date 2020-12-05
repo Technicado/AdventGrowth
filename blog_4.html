@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Post Four</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post Four</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Marcus Patel</strong> | April 22 2020
+            </p>
+            <img src="images/blog/blog4.jpg" alt="post one">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus ad iure sit
+                distinctio repellat et blanditiis nisi necessitatibus. Praesentium natus nobis quisquam
+                laborum eum sint iusto repudiandae hic odit.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente assumenda, dicta, qui asperiores
+                perspiciatis, vero enim corrupti expedita adipisci nobis provident eius soluta? Omnis dicta fuga iure
+                veniam quibusdam tempore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, fuga vitae! Obcaecati voluptas eaque
+                recusandae earum ut cupiditate impedit est vitae quas. Veniam numquam explicabo tempore corrupti
+                molestiae laborum nisi eius neque officia vitae magni non, iste nemo ex vero. Laborum explicabo
+                recusandae consequuntur aliquid perferendis est in suscipit ex.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem a ea atque reprehenderit, fugiat vel
+                provident quia expedita eum deleniti soluta sunt quaerat in doloremque enim eveniet dolorem vero libero
+                placeat, odit ullam? Blanditiis hic sunt consectetur? Sed sequi eaque eius ipsum aperiam, repellat,
+                explicabo earum voluptate ipsam numquam necessitatibus dolores obcaecati eveniet, officiis quaerat ad et
+                labore dignissimos cumque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt numquam temporibus dolor
+                accusantium. Eos fuga quae nisi, cum harum quasi alias soluta minus accusamus molestiae voluptates
+                voluptatibus asperiores laudantium exercitationem dolor, vitae quisquam recusandae magni reprehenderit
+                impedit a tempore quis sed? Minus quod quasi asperiores magni eos! Maiores a voluptates, officia
+                repellat magnam minus commodi facere, inventore ullam libero odio soluta nisi laudantium labore quo ut
+                hic nemo exercitationem mollitia expedita repudiandae aperiam quis dolore incidunt! Sequi, distinctio
+                eaque!</p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <p>Copyright &copy; 2020 - AdventGrowth</p>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-270px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
